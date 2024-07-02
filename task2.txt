@@ -1,0 +1,43 @@
+class Car {
+    String brand;
+    String model;
+    int year;
+    Car(this.brand,this.model,this.year);
+    void print1(){
+        print('Brand:$brand,model:$model,year:$year');
+    }
+}
+void main() {
+
+ //hello world
+ print("Hello, World!");
+ //for loop
+ List<String> name=[];
+ for(int i=1;i<=100;i++){
+     name.add('$i');
+ }
+ String output=name.join(',');
+ print(output);
+ //while loop
+ int i=1;
+ List<String> num=[];
+ while(i<=100){
+     num.add('$i');
+     i+=1;
+ }
+ String out=num.join(',');
+ print(out);
+ //do while
+ int j=1;
+ List<String> num1=[];
+ do{
+     num1.add('$j');
+     j=j+1;
+ }
+ while(j<=100);
+ String outp=num1.join(',');
+ print(outp);
+//sum
+    Car obj=Car('toyota','corolla',2021);
+    obj.print1();
+}
