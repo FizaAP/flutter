@@ -1,0 +1,13 @@
+class Car {
+    String brand;
+    String model;
+    int year;
+    Car(this.brand,this.model,this.year);
+    void print1(){
+        print('Brand:$brand,model:$model,year:$year');
+    }
+}
+void main() {
+    Car obj=Car('toyota','corolla',2021);
+    obj.print1();
+}
